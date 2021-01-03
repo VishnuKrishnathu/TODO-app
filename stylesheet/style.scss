@@ -1,18 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,500;1,600&display=swap');
+
 *{
     border: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
     background-color: #181824;
+    .image{
+        background-image: url(../images/bg-desktop-dark.jpg);
+        background-size: cover;
+        height: 35vh;
+    }
+    main{
+        position: absolute;
+        top: 10vh;
+        display: grid;
+        grid-template-columns: 20vw 30vw 30vw 20vw;
+        grid-template-rows: repeat(4, 30px);
+        #todo{
+            //transform: translate(-50%,0);
+            grid-column: 2/4;
+            display: flex;
+            justify-content: space-between;
+            h1{
+                font-family: 'Josefin Sans', sans-serif;
+                color: white;
+            }
+        }
+    }
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    padding: 5em 2em;
-    background-image:url(../images/bg-desktop-dark.jpg) ;
-    background-size: cover;
-    h1{
-        color: white;
+.items_container{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: white;
+    border-radius: 99px;
+    .search{
+        padding-top: 30px;
     }
 }
