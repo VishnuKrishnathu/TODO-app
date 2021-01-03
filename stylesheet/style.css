@@ -24,8 +24,8 @@ body main {
   display: grid;
   -ms-grid-columns: 20vw 30vw 30vw 20vw;
       grid-template-columns: 20vw 30vw 30vw 20vw;
-  -ms-grid-rows: (30px)[4];
-      grid-template-rows: repeat(4, 30px);
+  -ms-grid-rows: 60px (40px)[3];
+      grid-template-rows: 60px repeat(3, 40px);
 }
 
 body main #todo {
@@ -45,18 +45,25 @@ body main #todo h1 {
   color: white;
 }
 
+body main #todo .theme {
+  cursor: pointer;
+}
+
 .items_container {
+  padding-top: 30px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-color: white;
+  background-color: #25273C;
   border-radius: 99px;
 }
 
-.items_container .search {
-  padding-top: 30px;
+#items {
+  height: 330 px;
+  width: 100%;
+  background: red;
 }
 /*# sourceMappingURL=style.css.map */

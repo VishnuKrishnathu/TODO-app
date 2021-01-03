@@ -18,7 +18,7 @@ body{
         top: 10vh;
         display: grid;
         grid-template-columns: 20vw 30vw 30vw 20vw;
-        grid-template-rows: repeat(4, 30px);
+        grid-template-rows: 60px repeat(3, 40px);
         #todo{
             //transform: translate(-50%,0);
             grid-column: 2/4;
@@ -28,15 +28,19 @@ body{
                 font-family: 'Josefin Sans', sans-serif;
                 color: white;
             }
+            .theme{cursor: pointer;}
         }
     }
 }
 .items_container{
+    padding-top: 30px;
     grid-column: 2/4;
     grid-row: 2/3;
-    background-color: white;
+    background-color: #25273C;
     border-radius: 99px;
-    .search{
-        padding-top: 30px;
-    }
+}
+#items{
+    height: 330 px;
+    width: 100%;
+    background: red;
 }
