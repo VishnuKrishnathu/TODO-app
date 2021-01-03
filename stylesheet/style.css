@@ -97,4 +97,18 @@ body main #todo .theme {
   margin-right: 10px;
   margin-left: 10px;
 }
+
+.status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.status #all {
+  color: #4F79D5;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

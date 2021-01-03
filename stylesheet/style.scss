@@ -63,3 +63,12 @@ body{
     margin-right: 10px;
     margin-left: 10px;
 }
+.status{
+    //display: flex;
+    width: 100%;
+    //justify-content: space-around;
+    #all{
+        color: #4F79D5;
+        cursor: pointer;
+    }
+}
