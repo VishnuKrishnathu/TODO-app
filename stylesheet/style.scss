@@ -32,11 +32,8 @@ body{
     }
 }
 .items_container{
-    padding-top: 30px;
     grid-column: 2/4;
     grid-row: 2/3;
-    background-color: #25273C;
-    border-radius: 99px;
 }
 #items{
     grid-row: 4/5;
@@ -44,10 +41,11 @@ body{
 }
 .list_items{
     width: 100%;
+    border-collapse: collapse;
     td{
         background-color: #25273C;
         color: #9395AE;
-        border: 0.5px solid #777A92;
+        border-bottom: 1px solid  #777A92; 
         height: 40px;
         display: flex;
         align-items: center;
@@ -62,13 +60,28 @@ body{
     cursor: pointer;
     margin-right: 10px;
     margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .status{
-    //display: flex;
+    display: flex;
     width: 100%;
-    //justify-content: space-around;
+    justify-content: space-around;
     #all{
-        color: #4F79D5;
+        color: #07F3E3;
         cursor: pointer;
     }
+}
+#todo_items{
+    height: 40px;
+    width: 100%;
+    background-color: #25273C;
+    border-radius: 99px;
+    padding-left: 20px;
+    font-size: 13pt;
+}
+#todo_items:focus{
+    outline: none;
+    caret-color: #9395AE;
 }

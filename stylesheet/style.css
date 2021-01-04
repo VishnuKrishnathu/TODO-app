@@ -50,15 +50,12 @@ body main #todo .theme {
 }
 
 .items_container {
-  padding-top: 30px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-color: #25273C;
-  border-radius: 99px;
 }
 
 #items {
@@ -72,12 +69,13 @@ body main #todo .theme {
 
 .list_items {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .list_items td {
   background-color: #25273C;
   color: #9395AE;
-  border: 0.5px solid #777A92;
+  border-bottom: 1px solid  #777A92;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +94,15 @@ body main #todo .theme {
   cursor: pointer;
   margin-right: 10px;
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .status {
@@ -108,7 +115,21 @@ body main #todo .theme {
 }
 
 .status #all {
-  color: #4F79D5;
+  color: #07F3E3;
   cursor: pointer;
+}
+
+#todo_items {
+  height: 40px;
+  width: 100%;
+  background-color: #25273C;
+  border-radius: 99px;
+  padding-left: 20px;
+  font-size: 13pt;
+}
+
+#todo_items:focus {
+  outline: none;
+  caret-color: #9395AE;
 }
 /*# sourceMappingURL=style.css.map */
