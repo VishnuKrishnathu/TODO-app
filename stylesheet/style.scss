@@ -50,6 +50,19 @@ body{
         display: flex;
         align-items: center;
     }
+    .selector{
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(to right, #4D93AA , #5A5FB8 , #9244C1 , #A832CB);
+        border: 1px solid #707070;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .circle{
     height: 20px;
@@ -60,9 +73,6 @@ body{
     cursor: pointer;
     margin-right: 10px;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .status{
     display: flex;
@@ -77,6 +87,7 @@ body{
     height: 40px;
     width: 100%;
     background-color: #25273C;
+    color: #9395AE ;
     border-radius: 99px;
     padding-left: 20px;
     font-size: 13pt;
