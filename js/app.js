@@ -3,6 +3,7 @@ const list = document.querySelector(".list_items");
 const data = document.querySelector(".data");
 const input_field = document.querySelector("#todo_items");
 let circle=document.querySelectorAll(".circle");
+let items_left= document.querySelector("#number_of_items");
 input_field.addEventListener("keyup", e=>{
     if(e.key === "Enter"){
         const data_element = document.createElement("td");
@@ -24,5 +25,9 @@ input_field.addEventListener("keyup", e=>{
                 }
             })
         })
+        //##########code######################
+        if(circle.length >= 1){
+            items_left.textContent = circle.length;
+        }
     }
 })

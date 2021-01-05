@@ -42,6 +42,7 @@ body{
 .list_items{
     width: 100%;
     border-collapse: collapse;
+    box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.5);
     td{
         background-color: #25273C;
         color: #9395AE;
@@ -95,4 +96,9 @@ body{
 #todo_items:focus{
     outline: none;
     caret-color: #9395AE;
+}
+@media screen and (max-width: 715px){
+    body{
+        background: red;
+    }
 }
