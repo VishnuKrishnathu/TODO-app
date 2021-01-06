@@ -2,7 +2,7 @@ const checkmark = '<svg xmlns="http://www.w3.org/2000/svg" width="11" height="8"
 const list = document.querySelector(".list_items");
 const data = document.querySelector(".data");
 const input_field = document.querySelector("#todo_items");
-let circle=document.querySelectorAll(".circle");
+let circle;
 let items_left= document.querySelector("#number_of_items");
 input_field.addEventListener("keyup", e=>{
     if(e.key === "Enter"){
@@ -14,20 +14,20 @@ input_field.addEventListener("keyup", e=>{
         data.appendChild(data_element);
         input_field.value = "";
         circle = document.querySelectorAll(".circle");
-        circle.forEach(round_obj =>{
-            round_obj.addEventListener("click", e=>{
-                if(!round_obj.classList.contains("selector")){
-                    round_obj.classList.add("selector");
-                    round_obj.innerHTML = checkmark;
-                }else{
-                    round_obj.classList.remove("selector");
-                    round_obj.innerHTML = '';
-                }
-            })
-        })
         //##########code######################
         if(circle.length >= 1){
             items_left.textContent = circle.length;
         }
+    }
+})
+
+document.addEventListener("click", e =>{
+    if(e.target.classList.contains("circle") && !e.target.classList.contains("selector")){
+        e.target.innerHTML= checkmark;
+        e.target.classList.add("selector");
+    }
+    else if(e.path[2].classList.contains("selector")){
+        e.path[2].innerHTML= "";
+        e.path[2].classList.remove("selector");
     }
 })
